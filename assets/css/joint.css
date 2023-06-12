@@ -1,0 +1,47 @@
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 60%;
+    transform: translate(-50%, -50%);
+    border: 3px solid blue;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.user img {
+    width: 100px;
+}
+
+.user {
+    text-align: center;
+}
+
+.title   {
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 95%;
+        font-size: .8rem;
+    }
+
+    .user img {
+        width: 60px;
+    }
+}

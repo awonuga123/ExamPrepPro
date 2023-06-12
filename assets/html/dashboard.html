@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsQuiz | Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script>
+           async function getData() {
+            let token = window.localStorage.getItem("access-token")
+            let username = window.sessionStorage.getItem("user")
+            let response = await fetch("https://web-01.awonuga.tech/ExamPrepPro_api/getdata", {
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'user': username,
+                }
+            });
+            let data = await response.json()
+            quiz_data = data['quiz-details']
+            if (response.status === 200 && quiz_data.at(-1)['status'] != true) {
+                user = data.user
+                console.log(quiz_data.at(-1))
+                let quiz_title = quiz_data.at(-1)['quiz_title']
+                let quiz_subject = quiz_data.at(-1)['subject']
+                let quiz_id = quiz_data.at(-1)['quiz_id']
+                let created_at = quiz_data.at(-1)['created_at'] 
+        
+                document.getElementById("quiz-head").innerHTML = `Title: ${quiz_title}`
+                document.getElementById("quiz-subject").innerHTML = `Subject: ${quiz_subject}`
+                document.getElementById("quiz-id").innerHTML = `ID: ${quiz_id}`
+                document.getElementById("quiz-date").innerHTML = `Date: ${created_at.substring(0,10)}`
+                window.sessionStorage.setItem("quiz_id", quiz_id)
+            }
+        }
+        
+        async function chechActive () {
+            let token = window.localStorage.getItem("access-token")
+            let username = window.sessionStorage.getItem("user")
+            if (username === null) {
+                window.location = "../html/login.html"
+            }
+            let response = await fetch("https://web-01.awonuga.tech/ExamPrepPro_api/getdata", {
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'user': username,
+                }
+            });
+            let data = await response.json()
+            if (response.status === 200) {
+                let list = data['quiz-details']
+                var quiz_container = document.getElementsByClassName('quiz-section')[0]
+                for (let a = 0; a < list.length; a++) {
+                    var quiz_list = `<div class="quiz">
+                    <div class="quiz-details">
+                        <div class="radio">
+                            <div class="radio-btn">
+                                <p class="details">Title: ${list[a]['quiz_title']}</p>
+                            </div>
+                            <div class="radio-btn">
+                                <p class="details">ID: ${list[a]['quiz_id']}</p>
+                            </div>
+                            <div class="radio-btn">
+                                <p class="details">Subject: ${list[a]['subject']}</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>`
+                    if (list[a]['status'] === true) {
+                        quiz_container.innerHTML = quiz_container.innerHTML + quiz_list;
+                    }
+                }
+            } else {
+                window.location = "../html/login.html";
+            }
+        }
+        getData();
+        chechActive();
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1 class="letsquiz"><span>Lets</span>Quiz</h1>
+            </div>
+            <div class="navigation">
+                <p class="list" id="logged_in_user"></p>
+            </div>
+        </nav>
+        <div class="header2">
+            <div class="title">
+                <h2>DASHBOARD</h2>
+            </div>
+            <div class="button">
+                <a href="../../index.html"><span><button class="btn-01" style="color: blue; background-color: white">Home</button></span></a> 
+            </div> 
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="quiz-title">
+                <div class="dashboard-title">
+                    <h3>PREVIOUS QUIZ DETAILS</h3>
+                </div>
+                <div class="quiz-section">
+                </div>
+                <div class="quiz-button">
+                    <button id="end_quiz">End all quiz</button>
+                </div>
+            </div>
+            <div class="exam">
+                <div class="dashboard-title">
+                    <h3>PREVIOUS PROCTORED EXAM</h3>
+                </div>
+                <div class="quiz-section">
+                    <div class="quiz">
+                        <div class="quiz-details">
+                            <div class="radio">
+                                <div class="radio-btn">
+                                    <p class="details">Quiz Title</p>
+                                </div>
+                                <div class="radio-btn">
+                                    <p class="details">Quiz ID</p>
+                                </div>
+                                <div class="radio-btn">
+                                    <p class="details">Quiz Subject</p>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="quiz-button">
+                            <a href="#"><button>View Details</button></a>
+                        </div>
+                    </div>
+                    <div class="quiz">
+                        <div class="quiz-details">
+                            <div class="radio">
+                                <div class="radio-btn">
+                                    <p class="details">Quiz Title</p>
+                                </div>
+                                <div class="radio-btn">
+                                    <p class="details">Quiz ID</p>
+                                </div>
+                                <div class="radio-btn">
+                                    <p class="details">Quiz Subject</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-button">
+                            <a href=><button>View Details</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="dashboard-title">
+                <h3>ORGANISE QUIZ</h3>
+            </div>
+            <section class="organizeQuiz">
+                <form>
+                    <h3>Provide details</h3>
+                    <h5 id="response"></h5> 
+                    <div class="form">
+                        <input type="text" id="quiz-title" name="quiz-title" placeholder="quiz title">
+                    </div>
+                    <select class="form2" name="subject" id="subject">
+                        <option value="Arts and Literature">Arts and Literature</option>
+                        <option value="General Knowledge">General Knowledge</option>
+                        <option value="Geography">Geography</option>
+                        <option value="History">History</option>
+                        <option value="Music">Music</option>
+                        <option value="Science">Science</option>
+                        <option value="Society and Culture">Society and Culture</option>
+                        <option value="Sport and leisure">Sport and leisure</option>
+                    </select>
+                    <div class="button">
+                        <button class="btn-01"id="quiz-btn" type="button">Create Quiz</button> 
+                    </div> 
+                </form>
+            </section>
+            <div class="dashboard-title">
+                <h3>ACTIVE QUIZ</h3>
+            </div>
+            <div class="active-quiz">
+                <div class="quiz" style="margin:0; width:90%">
+                    <div class="quiz-details" style="padding:0">
+                        <div class="radio" style="flex-direction:column;align-items:flex-start">
+                            <div class="radio-btn" style="margin-bottom: 10px;">
+                                <p class="details" id="quiz-head">Quiz Title</p>
+                            </div>
+                            <div class="radio-btn" style="margin-bottom: 10px;">
+                                <p class="details" id="quiz-subject">Quiz Subject</p>
+                            </div>
+                            <div class="radio-btn" style="margin-bottom: 10px;">
+                                <p class="details" id="quiz-id">Quiz ID</p>
+                            </div>
+                            <div class="radio-btn" style="margin-bottom: 10px;">
+                                <p class="details" id="quiz-date">Date Created</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-button">
+                        <a href="#"><button id="start-btn">Start</button></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <script src="../js/dashboard.js"></script>

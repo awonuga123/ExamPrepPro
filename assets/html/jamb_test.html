@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz</title>
+    <link rel="stylesheet" href="../css/take_quiz.css">
+</head>
+<body>
+    <main class="container">
+        <section class="quiz-container">
+            <div class="heading">
+                <div class="quiz-details">
+                    <div class="subject">
+                        <h3 id="subject-title">Subject</h3>
+                    </div>
+                    <div class="question-no">
+                        <h3 id="question-no">Question : of :</h3>
+                    </div>
+                </div>
+                <div class="quiz-actions">
+                    <div class="button">
+                        <button class="btn-01" id="submit-btn">Submit</button> 
+                    </div>        
+                    <div class="quiz-button">
+                        <a href="../../index.html"><button>Exit</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <p id="question"></p>
+            </div>
+            <div class="section">
+                <p id="section"></p>
+            </div>
+            <div class="image">
+                <img id="image" src="" alt="" srcset="">
+            </div>
+            <div class="answers" id="answers">
+                <div class="radio-btn">
+                    <input type="radio" id="answer-01" name="fav_language" value="answer-01">
+                    <label for="anser-01">answer-01</label><br>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="answer-02" name="fav_language" value="answer-02">
+                    <label for="answer-02">answer-02</label><br>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="answer-03" name="fav_language" value="answer-03">
+                    <label for="answer-03">answer-03</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="anser-04" name="fav_language" value="anser-04">
+                    <label for="anser-04">answer-04</label>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="time">
+                    <h3 class="duration" id="duration"></h3>
+                </div>
+                <div class="action-button">
+                    <div class="button">
+                        <button class="btn-01" id="previous-btn">Previous</button> 
+                    </div>        
+                    <div class="button">
+                        <button class="btn-01" id="next-btn">Next</button> 
+                    </div>        
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/jamb_test.js"></script>
+</body>
+</html>

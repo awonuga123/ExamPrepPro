@@ -1,0 +1,74 @@
+body {
+    margin: 0 auto;
+    padding: 0  auto;
+    background-color: cornflowerblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trirong", serif;
+}
+
+form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid blue;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.button button {
+    background-color: rgb(38, 38, 238);
+    color: white;
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 25px;
+    font-size: large;
+    font-family: "Trirong", serif;
+}
+
+
+input {
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 25px;
+    font-size: large;
+    font-family: "Trirong", serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 12rem;
+}
+
+form h3 {
+    color: rgb(38, 38, 238);
+    margin-top: -10px;
+}
+
+form p {
+    margin-bottom: -10px;
+}
+
+form .footer a {
+    color: rgb(38, 38, 238);
+    font-weight: 100;    
+}
+
+h5 {
+    color: rgb(131, 122, 122);
+    margin-top: -10px;
+}
+
+form p {
+    line-height: 1.2rem;
+    font: .6rem;
+}
+
+form p {
+    margin-bottom: 1rem;
+}

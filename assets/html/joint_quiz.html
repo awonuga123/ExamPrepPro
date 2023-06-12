@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz</title>
+    <link rel="stylesheet" href="../css/joint_quiz.css">
+</head>
+<body onunload="func()">
+    <main class="container">
+        <section class="quiz-container">
+            <div class="heading">
+                <div class="quiz-details"> 
+                    <div class="subject">
+                        <h3 id="subject-title">Subject</h3>
+                    </div>
+                    <div class="subject">
+                        <h3 id="my_name"></h3>
+                    </div>
+                    <div class="question-no">
+                        <h3 id="question-no">No of Questions</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <p id="question"></p>
+            </div>
+            <div class="answers" id="answers">
+                <div class="radio-btn">
+                    <input type="radio" id="answer-01" name="fav_language" value="answer-01">
+                    <label for="anser-01"></label><br>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="answer-02" name="fav_language" value="answer-02">
+                    <label for="answer-02"></label><br>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="answer-03" name="fav_language" value="answer-03">
+                    <label for="answer-03"></label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" id="answer-04" name="fav_language" value="anser-04">
+                    <label for="anser-04"></label>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="time">
+                    <h3 class="duration" id="duration"></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="container-2">
+        <section class="quiz-container">
+            <div class="heading">
+                <div class="quiz-details">
+                    <div class="subject">
+                        <h3 id="subject-title">Subject</h3>
+                    </div>
+                    <div class="question-no">
+                        <h3 id="question-no">Score Board</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="correct" style="margin-left: 10px;">
+                <h4 id="correct"></h4>
+            </div>
+            <div class="answers" id="scores">
+            </div>
+        </section>
+    </aside>
+    <script src="../js/joint_quiz.js"></script>
+</body>
+</html>

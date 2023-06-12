@@ -1,0 +1,471 @@
+body {
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+
+header {
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ExamPrepPro span {
+    color: rgb(9, 9, 201);
+}
+
+.ExamPrepPro {
+    color:rgb(38, 38, 238);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: rgb(126, 120, 120);
+}
+
+header ul li span, .btn-01 {
+    border: 1px solid rgb(38, 38, 238);
+    background-color: aliceblue;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    color: rgb(38, 38, 238);
+    font-size: medium;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation button {
+    cursor: pointer;
+}
+
+.text-1 {
+    color: rgb(71, 63, 63);
+}
+
+.intro {
+    text-align: center;
+}
+
+.text-2 {
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin: 0px 0px 0px -20px;
+    color: black;
+}
+
+.text-3 {
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 2rem;
+    color: rgb(71, 63, 63);
+}
+
+span .btn-01 {
+    color: white;
+    background-color: rgb(38, 38, 238);
+    margin-left: 2rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button{
+    cursor: pointer;
+}
+
+.container-brief {
+    background-image: url("https://cdn.dribbble.com/users/5016973/screenshots/11948139/instagram_post_-_3.png");
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-details {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.about-image img {
+    width: 25rem;
+}
+
+.h1-text h1 {
+    font-weight: bolder;
+    color: rgb(38, 38, 238);
+    border-bottom: 2px solid orange;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+}
+
+.h1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.about {
+    width: 500px;
+}
+
+.quiz-section {
+    background-color: rgba(217, 217, 243, 0.377);
+    padding-bottom: 2rem;
+}
+
+.quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: rgb(22, 2, 57);
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn, .radio h5 {
+    padding: 0;
+    margin-right: 1.5rem;
+    padding-right: .4rem;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: rgba(217, 217, 243, 0.377);
+}
+
+.radio h5 {
+    font-size: medium;
+}
+
+.quiz-details h3 {
+    margin-bottom: -0.3rem;
+}
+
+.quiz-button button {
+    padding: .4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    font-size: 1rem;
+    color: red;
+    border: 1px solid red;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.radio-btn p {
+    padding-top: -7rem;
+}
+
+.quiz-section .h1-text .about-text {
+    width: 30%;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer {
+    background-color: rgb(2, 2, 100);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h1 {
+    color: white;
+}
+
+.handles {
+    display: flex;
+    flex-direction: column;
+}
+
+.handles span {
+    padding: 1rem;
+}
+
+.footer p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.handles {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    padding-bottom: 2rem;
+}
+
+form {
+    width: 40%;
+    text-align: center;
+    border: 3px solid blue;
+    background-color: rgba(217, 217, 243, 0.377);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-left: 28%;
+}
+
+form input, form select {
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 25px;
+    font-size: large;
+    font-family: "Trirong", serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+}
+
+form h3 {
+    color: rgb(38, 38, 238);
+    margin-top: -10px;
+}
+
+form p {
+    margin-bottom: -10px;
+}
+
+/* .button button {
+    background-color: rgb(38, 38, 238);
+    color: white;
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 25px;
+    font-size: large;
+    font-family: "Trirong", serif;
+}
+
+
+
+
+
+form .footer a {
+    color: rgb(38, 38, 238);
+    font-weight: 100;    
+}
+
+h5 {
+    color: rgb(131, 122, 122);
+    margin-top: -10px;
+}
+
+.header2 {
+    display: flex;
+}
+
+form h5 {
+    color: rgb(131, 122, 122);
+    margin-top: -10px;
+}
+
+.form2 {
+    width: 70%;
+} */
+
+@media (max-width: 650px) {
+    body {
+        width: fit-content;
+    }
+
+    .no-list {
+        display: none;
+    }
+
+    .intro {
+        margin-top: -6rem;
+    }
+
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    .letsquiz {
+        font-size: 1.5rem;
+    }
+
+    header ul li {
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .text-2 {
+        padding-left: 40px;
+        padding-right: 5px;
+        font-size: 3.5rem;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text-3 {
+        font-size: 1.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 2.5rem;
+        text-align: left;
+        font-weight:400;
+    }
+
+    .about-details {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .about-section   {
+        flex-direction: column-reverse;
+    }
+
+    .quiz-section .h1-text .about-text, .organizeQuiz .h1-text .about-text {
+        width: 80%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .quiz {
+        font-size: .8rem;
+        width: 85%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: .8rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .quiz-section {
+        width: 100%;
+    }
+
+    .quiz h1, .radio h5 {
+        font-size: .9rem;
+    }
+
+    .radio-btn, .radio h5 {
+        margin-right: .8rem;
+        padding-right: .5rem;
+    }
+
+    .quiz-button button {
+        padding: .4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: .8rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        line-height: 2.1rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: rgb(134, 123, 123);
+    }
+
+    .h1-text h1 {
+        font-size: 1.3rem;
+    }
+
+    body {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .about-image img {
+        width: 32rem;
+    }
+
+    .container-brief {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position-x: 80%;
+        background-position-y: 100%;
+    }
+
+    .button {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .button button {
+        margin: 5px;
+    }
+
+    .about {
+        margin-top: -3rem;
+    }
+
+    form {
+        width: 70%;
+        padding: 2rem;
+        margin-left: 9%;
+    }
+}

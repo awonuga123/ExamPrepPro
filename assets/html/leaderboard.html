@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/leaderboard.css">
+</head>
+<body onbeforeunload = "backButtonEvent()">
+    <div class="card one">
+        <div class="header">
+          <i class="arrow fas fa-chevron-left"></i>
+          <h3 class="title">Leaderboard</h3>
+          <div></div>
+        </div>
+        <div class="sort">
+          <div class="day">Second</div>
+          <div class="day active">First</div>
+          <div class="day">Third</div>
+        </div>
+        <div class="profile">
+          <div class="person second">
+            <div class="num">2</div>
+            <i class="fas fa-caret-up"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" class="photo">
+            <p class="link" id="person_2"></p>
+            <p class="points" id="score_2"></p>
+        </div>
+        <div class="person first">
+            <div class="num">1</div>
+            <i class="fas fa-crown"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="" class="photo main">
+            <p class="link" id="person_1"></p>
+            <p class="points" id="score_1"></p>
+        </div>
+        <div class="person third">
+            <div class="num">3</div>
+            <i class="fas fa-caret-up"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="" class="photo">
+            <p class="link" id="person_3"></p>
+            <p class="points" id="score_3"></p>
+        </div>
+    </div>
+        <div class="rest">
+          <div class="others flex">
+            <div class="rank">
+              <i class="fas fa-caret-up"></i>
+            </div>
+            <div class="info flex">
+              <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="" class="p_img">
+              <p class="link" id="my_name"></p>
+              <p class="points" id="my_score"></p>
+            </div>
+          </div>
+        </div>
+        <div class="sort">
+          <a href="../../index.html"><button class="day active">Home</button></a>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="../js/leaderboard.js"></script>
+</body>
+</html>
