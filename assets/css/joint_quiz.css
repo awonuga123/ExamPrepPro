@@ -1,234 +1,223 @@
-.quiz-button button, .button button {
-    padding: .4rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    font-size: 1rem;
-    color: white;
-    border: 1px solid red;
-    border-radius: 25px;
-    background-color: red   ;
-    cursor: pointer;
-}
-
-.button button {
-    background-color: rgb(38, 38, 238);
-    color: white;
-    border: none;
-}
-
 body {
-    background-color: cornflowerblue;
+    background-color: #ffeded;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-}
-
-main, aside {
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  main,
+  aside {
     position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     width: 60%;
     transform: translate(-50%, -50%);
-    border: 3px solid blue;
-    background-color: antiquewhite;
+    border: 3px solid #4b0082;
+    background-color: #f9f1ff;
     border-radius: 15px;
-}
-
-.heading {
+  }
+  
+  .heading {
     display: flex;
     justify-content: space-between;
-}
-
-.quiz-details {
+  }
+  
+  .quiz-details {
     display: flex;
-}
-
-.subject, .question-no {
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+  
+  .subject,
+  .question-no {
+    padding: 20px;
     margin: 20px;
-    background-color: cornflowerblue;
+    background-color: #ffa500;
     border-radius: 20px;
-    color: white;
-}
-
-.quiz-actions {
+    color: #fff;
+  }
+  
+  .quiz-actions {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.quiz-button {
-    margin: 20px    ;
-}
-
-.question {
+  }
+  
+  .quiz-button {
+    margin: 20px;
+  }
+  
+  .question {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
     border-radius: 20px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-.answers {
+  }
+  
+  .answers {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2rem;
-}
-
-.radio-btn {
+  }
+  
+  .radio-btn {
     margin-bottom: 1.5rem;
-    background-color: white;
+    background-color: #fff;
     border-radius: 25px;
     padding: 1rem;
-}
-
-.radio-btnn {
+  }
+  
+  .radio-btnn {
     display: none;
     margin-bottom: 1.5rem;
-    background-color: white;
+    background-color: #fff;
     border-radius: 25px;
     padding: 1rem;
-}
-
-.question {
-    border-bottom: 4px solid cornflowerblue;
-}
-
-.footer {
+  }
+  
+  .question {
+    border-bottom: 4px solid #ffa500;
+  }
+  
+  .footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
-}
-
-.action-button {
+  }
+  
+  .action-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.footer button {
+  }
+  
+  .footer button {
     font-size: 1.3rem;
     margin: 10px;
-}
-
-.score p {
+  }
+  
+  .score p {
     font-size: 7rem;
     font-weight: bold;
     line-height: 0;
     padding-top: 0;
-}
-
-.score {
+  }
+  
+  .score {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.score h2 {
+  }
+  
+  .score h2 {
     line-height: 0;
     margin-bottom: -50px;
     margin-top: 60px;
-}
-
-.footer a button {
+  }
+  
+  .footer a button {
     padding: 0;
     margin: 0;
-}
-
-.time h3 {
+  }
+  
+  .time h3 {
     color: red;
-}
-
-.correct {
+  }
+  
+  .correct {
     color: green;
     line-height: 0;
-}
-
-.wrong   {
+  }
+  
+  .wrong {
     color: red;
-}
-
-aside {
+  }
+  
+  aside {
     display: none;
-}
-
-.correct h4 {
+  }
+  
+  .correct h4 {
     line-height: 1rem;
-}
-
-@media (max-width: 650px) {
-    main, aside {
-        width: 90%;
+  }
+  
+  @media (max-width: 650px) {
+    main,
+    aside {
+      width: 90%;
     }
-
-    .quiz-button button, .button button {
-        padding: .4rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
-        font-size: 1rem;
+  
+    .quiz-button button,
+    .button button {
+      padding: 0.4rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      font-size: 1rem;
     }
-
-    .subject, .question-no {
-        padding: 0;
-        margin: 10px;
-        color: white;
-        background-color: antiquewhite;
-        height: 2.5rem;
+  
+    .subject,
+    .question-no {
+      padding: 0;
+      margin: 10px;
+      color: #fff;
+      background-color: #4b0082;
+      height: 2.5rem;
     }
-
-    .subject h3, .question-no h3 {
-        font-size: 0.9rem;
-        padding: 7px;
-        background-color: blue;
-        border-radius: 25px;
+  
+    .subject h3,
+    .question-no h3 {
+      font-size: 0.9rem;
+      padding: 7px;
+      background-color: #ffa500;
+      border-radius: 25px;
     }
-
+  
     .heading {
-        flex-direction: column;
+      flex-direction: column;
     }
-
-    .quiz-details, .quiz-actions{
-        justify-content: space-between;
-    }
-
+  
+    .quiz-details,
     .quiz-actions {
-        margin-left: -.6rem;
-        padding-right:0.6rem;;
-        flex-direction: row-reverse;
+      justify-content: space-between;
     }
-
+  
+    .quiz-actions {
+      margin-left: -0.6rem;
+      padding-right: 0.6rem;
+      flex-direction: row-reverse;
+    }
+  
     .question {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 1rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1rem;
     }
-
+  
     .answers {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2rem;
-        font-size: .9rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
-
+  
     .footer {
-        flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
-
+  
     .radio-btn {
-        margin-bottom: 1rem;
-        padding: .8rem;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
     }
-}
+  }
+  
