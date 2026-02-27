@@ -1,5 +1,5 @@
 body {
-    background-color: #E6FFFF;
+    background-color: #FFFDD0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,7 +217,7 @@ span .btn-01 {
 }
 
 footer {
-    background-color: #006400;
+    background-color: #0e8b87;
 }
 
 .footer {
