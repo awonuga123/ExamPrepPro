@@ -5,7 +5,6 @@
 
 class APIService {
     constructor() {
-        this.baseURL = CONFIG.API.BASE_URL;
         this.timeout = 30000; // 30 seconds
     }
 
@@ -47,7 +46,7 @@ class APIService {
         try {
             const url = endpoint.startsWith('http') 
                 ? endpoint 
-                : `${this.baseURL}${endpoint}`;
+                : endpoint;
 
             const config = {
                 method: options.method || 'GET',

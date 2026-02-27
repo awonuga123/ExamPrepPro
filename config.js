@@ -2,14 +2,13 @@
 const CONFIG = {
     // API Endpoints
     API: {
-        BASE_URL: 'https://web-01.awonuga.tech/ExamPrepPro_api',
         EXTERNAL_QUESTIONS: 'https://questions.aloc.com.ng/api/v2/q/40',
         ENDPOINTS: {
-            GET_DATA: '/getdata',
-            LOGIN: '/login',
-            SIGNUP: '/signup',
-            GET_QUIZ: '/getquiz',
-            SUBMIT_QUIZ: '/submitquiz'
+            GET_DATA: '/api/getdata',
+            LOGIN: '/api/login',
+            SIGNUP: '/api/signup',
+            GET_QUIZ: '/api/getquiz',
+            SUBMIT_QUIZ: '/api/submitquiz'
         },
         ACCESS_TOKEN: 'ALOC-e0ad6ccb9775c443b248'
     },
@@ -52,11 +51,6 @@ const CONFIG = {
         accent: '#06b6d4'         // Cyan for accents
     }
 };
-
-// Helper function to get API URL
-function getApiUrl(endpoint) {
-    return CONFIG.API.BASE_URL + CONFIG.API.ENDPOINTS[endpoint];
-}
 
 // Export for use in other files
 if (typeof module !== 'undefined' && module.exports) {
