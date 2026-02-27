@@ -1,9 +1,10 @@
 body {
-    background-color: #e6f9ff;
+    background-color: #f8fafc;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #1e293b;
   }
   
   main {
@@ -11,9 +12,10 @@ body {
     width: 60%;
     max-width: 800px;
     padding: 20px;
-    border: 3px solid #ffcc00;
+    border: 2px solid #6366f1;
     background-color: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
   }
   
   .profiles {
@@ -34,6 +36,7 @@ body {
   .title {
     text-align: center;
     margin-bottom: 20px;
+    color: #6366f1;
   }
   
   @media (max-width: 650px) {

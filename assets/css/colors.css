@@ -1,0 +1,38 @@
+/* Universal consistent color scheme across all CSS files */
+:root {
+    /* Primary Colors */
+    --color-primary: #6366f1;           /* Indigo */
+    --color-primary-light: #818cf8;     /* Light Indigo */
+    --color-primary-dark: #4f46e5;      /* Dark Indigo */
+    
+    /* Secondary Colors */
+    --color-secondary: #f97316;         /* Orange */
+    --color-secondary-light: #fb923c;   /* Light Orange */
+    --color-secondary-dark: #ea580c;    /* Dark Orange */
+    
+    /* Backgrounds */
+    --color-bg-light: #f8fafc;          /* Very Light Gray/Blue */
+    --color-bg-dark: #1e293b;           /* Very Dark Blue/Gray */
+    --color-bg-neutral: #f1f5f9;        /* Light Gray */
+    
+    /* Text Colors */
+    --color-text-primary: #1e293b;      /* Dark Gray */
+    --color-text-secondary: #64748b;    /* Medium Gray */
+    --color-text-light: #cbd5e1;        /* Light Gray */
+    --color-text-inverse: #f1f5f9;      /* Light text on dark */
+    
+    /* Status Colors */
+    --color-success: #22c55e;           /* Green */
+    --color-error: #ef4444;             /* Red */
+    --color-warning: #eab308;           /* Yellow */
+    --color-info: #3b82f6;              /* Blue */
+    
+    /* Borders */
+    --color-border-light: #e2e8f0;      /* Light border */
+    --color-border-primary: #cbd5e1;    /* Primary border */
+    
+    /* Special */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-accent: #06b6d4;            /* Cyan for accents */
+}

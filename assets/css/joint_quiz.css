@@ -1,9 +1,10 @@
 body {
-    background-color: #ffeded;
+    background-color: #f8fafc;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #1e293b;
   }
   
   main,
@@ -14,9 +15,10 @@ body {
     -webkit-transform: translate(-50%, -50%);
     width: 60%;
     transform: translate(-50%, -50%);
-    border: 3px solid #4b0082;
-    background-color: #f9f1ff;
+    border: 2px solid #6366f1;
+    background-color: #ffffff;
     border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
   }
   
   .heading {
@@ -32,9 +34,10 @@ body {
   .question-no {
     padding: 20px;
     margin: 20px;
-    background-color: #ffa500;
+    background-color: #f97316;
     border-radius: 20px;
     color: #fff;
+    font-weight: bold;
   }
   
   .quiz-actions {
@@ -59,6 +62,7 @@ body {
     padding: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #1e293b;
   }
   
   .answers {
@@ -72,6 +76,14 @@ body {
     background-color: #fff;
     border-radius: 25px;
     padding: 1rem;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-btn:hover {
+    border-color: #6366f1;
+    background-color: #f8fafc;
   }
   
   .radio-btnn {
@@ -83,7 +95,7 @@ body {
   }
   
   .question {
-    border-bottom: 4px solid #ffa500;
+    border-bottom: 3px solid #f97316;
   }
   
   .footer {
@@ -99,9 +111,22 @@ body {
     align-items: center;
   }
   
-  .footer button {
+  .footer button,
+  .quiz-button button {
     font-size: 1.3rem;
     margin: 10px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .footer button:hover,
+  .quiz-button button:hover {
+    background-color: #4f46e5;
   }
   
   .score p {
@@ -109,6 +134,7 @@ body {
     font-weight: bold;
     line-height: 0;
     padding-top: 0;
+    color: #6366f1;
   }
   
   .score {
@@ -122,24 +148,27 @@ body {
     line-height: 0;
     margin-bottom: -50px;
     margin-top: 60px;
+    color: #1e293b;
   }
   
   .footer a button {
-    padding: 0;
+    padding: 0.5rem 1.5rem;
     margin: 0;
   }
   
   .time h3 {
-    color: red;
+    color: #ef4444;
   }
   
   .correct {
-    color: green;
+    color: #22c55e;
     line-height: 0;
+    font-weight: bold;
   }
   
   .wrong {
-    color: red;
+    color: #ef4444;
+    font-weight: bold;
   }
   
   aside {
@@ -148,6 +177,8 @@ body {
   
   .correct h4 {
     line-height: 1rem;
+    color: #22c55e;
+  }
   }
   
   @media (max-width: 650px) {

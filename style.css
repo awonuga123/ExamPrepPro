@@ -1,11 +1,12 @@
 body {
-    background-color: #FFFDD0;
+    background-color: #f8fafc;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
 }
 
 header {
@@ -21,11 +22,11 @@ nav {
 }
 
 .ExamPrepPro span {
-    color: #FF7F50;
+    color: #f97316;
 }
 
 .ExamPrepPro {
-    color: #FF4500;
+    color: #6366f1;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,18 +40,18 @@ header ul li {
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    color: #808080;
+    color: #64748b;
 }
 
 header ul li span,
 .btn-01 {
-    border: 1px solid #FF4500;
-    background-color: #E6FFFF;
+    border: 1px solid #6366f1;
+    background-color: #f8fafc;
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
-    color: #FF4500;
+    color: #6366f1;
     font-size: medium;
 }
 
@@ -63,7 +64,7 @@ header ul li span,
 }
 
 .text-1 {
-    color: #4B0082;
+    color: #6366f1;
 }
 
 .intro {
@@ -73,9 +74,8 @@ header ul li span,
 .text-2 {
     font-size: 4rem;
     font-family: Arial, sans-serif;
-    color: #000000;
+    color: #1e293b;
     margin: 0px 0px 0px -20px;
-    color: #000000;
 }
 
 .text-3 {
@@ -84,12 +84,12 @@ header ul li span,
     padding-left: 25%;
     padding-right: 25%;
     line-height: 2rem;
-    color: #4B0082;
+    color: #64748b;
 }
 
 span .btn-01 {
     color: white;
-    background-color: #FF4500;
+    background-color: #6366f1;
     margin-left: 2rem;
 }
 
@@ -126,8 +126,8 @@ span .btn-01 {
 
 .h1-text h1 {
     font-weight: bolder;
-    color: #FF4500;
-    border-bottom: 2px solid orange;
+    color: #6366f1;
+    border-bottom: 2px solid #6366f1;
     width: max-content;
     text-align: center;
     align-items: center;
@@ -150,7 +150,7 @@ span .btn-01 {
 }
 
 .quiz-section {
-    background-color: rgba(255, 255, 224, 0.8);
+    background-color: #f1f5f9;
     padding-bottom: 2rem;
 }
 
@@ -162,12 +162,13 @@ span .btn-01 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    color: #000080;
-    background-color: #FFFFFF;
+    color: #1e293b;
+    background-color: #ffffff;
     border-radius: 25px;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
 }
 
 .radio {
@@ -183,7 +184,7 @@ span .btn-01 {
     padding-right: 0.4rem;
     border-radius: 25px;
     font-weight: bold;
-    background-color: rgba(255, 255, 224, 0.8);
+    background-color: #f1f5f9;
 }
 
 .radio h5 {
@@ -199,11 +200,17 @@ span .btn-01 {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
     font-size: 1rem;
-    color: #FF0000;
-    border: 1px solid #FF0000;
+    color: #ffffff;
+    border: 1px solid #ef4444;
     border-radius: 25px;
-    background-color: #FFFFFF;
+    background-color: #ef4444;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-button button:hover {
+    background-color: #dc2626;
+    border-color: #dc2626;
 }
 
 .radio-btn p {
@@ -217,7 +224,7 @@ span .btn-01 {
 }
 
 footer {
-    background-color: #0e8b87;
+    background-color: #1e293b;
 }
 
 .footer {
@@ -262,11 +269,12 @@ footer {
 form {
     width: 40%;
     text-align: center;
-    border: 3px solid #0000FF;
-    background-color: rgba(255, 255, 224, 0.8);
+    border: 2px solid #6366f1;
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 2rem;
     margin-left: 28%;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
 }
 
 form input,
@@ -285,7 +293,7 @@ form select {
 }
 
 form h3 {
-    color: #FF4500;
+    color: #6366f1;
     margin-top: -10px;
 }
 
