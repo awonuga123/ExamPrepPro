@@ -179,7 +179,6 @@ body {
     line-height: 1rem;
     color: #22c55e;
   }
-  }
   
   @media (max-width: 650px) {
     main,
@@ -200,7 +199,7 @@ body {
       padding: 0;
       margin: 10px;
       color: #fff;
-      background-color: #4b0082;
+      background-color: #6366f1;
       height: 2.5rem;
     }
   
@@ -208,7 +207,7 @@ body {
     .question-no h3 {
       font-size: 0.9rem;
       padding: 7px;
-      background-color: #ffa500;
+      background-color: #f97316;
       border-radius: 25px;
     }
   

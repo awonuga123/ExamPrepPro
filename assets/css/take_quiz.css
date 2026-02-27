@@ -230,7 +230,7 @@ main {
     padding: 0;
     margin: 10px;
     color: white;
-    background-color: #faebd7;
+    background-color: #6366f1;
     height: 2.5rem;
   }
 
@@ -238,7 +238,7 @@ main {
   .question-no h3 {
     font-size: 0.9rem;
     padding: 7px;
-    background-color: #1e4cff;
+    background-color: #f97316;
     border-radius: 25px;
   }
 
